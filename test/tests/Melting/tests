@@ -1,0 +1,17 @@
+[Tests]
+  [./test]
+    type = 'Exodiff'
+    input = 'Melting.i'
+    exodiff = 'Melting_out.e'
+  [../]
+  [./testgas]
+    type = 'Exodiff'
+    input = 'MeltingAndGas.i'
+    exodiff = 'MeltingAndGas_out.e'
+  [../]
+  [./eigenstrain_degraded]
+    type = 'Exodiff'
+	input = 'MeltingEigenstrainDegraded.i'
+	exodiff = 'MeltingEigenstrainDegraded_out.e'
+  [../]
+[]

@@ -1,0 +1,22 @@
+[Tests]
+  [./test_q0]
+    type = 'Exodiff'
+    input = 'SandfeldQ0.i'
+    exodiff = 'SandfeldQ0_out.e'
+  [../]
+  [./test_qconstant]
+    type = 'Exodiff'
+    input = 'SandfeldQconst.i'
+	exodiff = 'SandfeldQconst_out.e'
+  [../]
+  [./test_qadvection]
+    type = 'Exodiff'
+	input = 'SandfeldCurvatureAdvection.i'
+	exodiff = 'SandfeldCurvatureAdvection_out.e'
+  [../]
+  [./SandfeldZaiser_loop]
+    type = 'Exodiff'
+	input = 'SandfeldLoop.i'
+	exodiff = 'SandfeldLoop_out.e'
+  [../]
+[]
